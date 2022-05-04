@@ -168,6 +168,7 @@ footer {
         color: white;
         border: 1px solid $azzurro;
         background-color: $bg-dark-grey;
+        cursor: pointer;
       }
     }
     #bottom-right-footer {

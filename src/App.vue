@@ -39,6 +39,7 @@
       assumenda quos voluptates fugit, dignissimos aut eum velit minima esse
       aspernatur omnis vitae suscipit perspiciatis quis nihil. Ratione, porro
     </main>
+    <AppUpperFooter />
     <AppFooter />
   </div>
 </template>
@@ -46,11 +47,13 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
+import AppUpperFooter from "./components/AppUpperFooter.vue";
 export default {
   name: "App",
   components: {
     AppHeader,
     AppFooter,
+    AppUpperFooter,
   },
 };
 </script>
