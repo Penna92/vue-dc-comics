@@ -79,6 +79,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "../style/variables.scss";
+@import "../style/general.scss";
 
 .selected {
   color: $azzurro;
@@ -94,15 +95,17 @@ header {
   background-color: white;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  z-index: 9999;
   div {
-    // width: 50%;
+    margin-left: 40px;
     img {
       height: 70px;
       width: 70px;
     }
   }
   ul {
+    margin-right: 40px;
     height: 100%;
     display: flex;
     line-height: 100px;
