@@ -145,6 +145,10 @@ footer {
           a {
             text-decoration: none;
             color: $grey-font;
+            &:hover {
+              color: white;
+              font-weight: bold;
+            }
           }
         }
       }
@@ -176,6 +180,9 @@ footer {
         border: 1px solid $azzurro;
         background-color: $bg-dark-grey;
         cursor: pointer;
+        &:hover {
+          background-color: $hover;
+        }
       }
     }
     #bottom-right-footer {
@@ -189,6 +196,7 @@ footer {
         display: flex;
         gap: 10px;
         li {
+          // overflow: hidden;
           padding: auto;
           line-height: 30px;
           height: 30px;
@@ -196,6 +204,10 @@ footer {
           border-radius: 50%;
           list-style-type: none;
           text-align: center;
+          &:hover {
+            background-color: white;
+            // overflow: hidden;
+          }
           a {
             text-decoration: none;
             color: $bg-dark-grey;

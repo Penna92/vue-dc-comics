@@ -152,8 +152,14 @@ export default {
       list-style-type: none;
       overflow-wrap: break-word;
       img {
+        margin-bottom: 10px;
+        transition: transform 0.2s;
         height: 70%;
         cursor: pointer;
+        &:hover {
+          transform: scale(1.05);
+          opacity: 0.6;
+        }
       }
       h4 {
         text-transform: uppercase;
@@ -168,6 +174,11 @@ export default {
     background-color: $azzurro;
     border: none;
     cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.1);
+      //   opacity: 0.6;
+    }
   }
 }
 </style>
