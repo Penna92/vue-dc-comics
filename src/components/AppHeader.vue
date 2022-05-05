@@ -97,9 +97,13 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 9999;
+  // min-width: 1000px;
+  overflow-x: auto;
+  overflow-y: hidden;
   div {
     margin-left: 40px;
     img {
+      vertical-align: middle;
       height: 70px;
       width: 70px;
     }

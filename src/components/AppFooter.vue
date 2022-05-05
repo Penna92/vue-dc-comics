@@ -1,7 +1,8 @@
 <template>
   <footer>
-    <div id="top-footer">
-      <div id="top-left-footer">
+    <AppUpperFooter />
+    <div id="central-footer">
+      <div id="center-left-footer">
         <ul>
           <li><h2>DC COMICS</h2></li>
           <li><a href="#">Characters</a></li>
@@ -11,14 +12,10 @@
           <li><a href="#">Games</a></li>
           <li><a href="#">Videos</a></li>
           <li><a href="#">News</a></li>
-        </ul>
-
-        <ul>
           <li><h2>SHOP</h2></li>
           <li><a href="#">Shop DC</a></li>
           <li><a href="#">Shop DC Collectibles</a></li>
         </ul>
-
         <ul>
           <li><h2>DC</h2></li>
           <li><a href="#">Terms Of Use</a></li>
@@ -42,7 +39,7 @@
           <li><a href="#">DC Power Visa</a></li>
         </ul>
       </div>
-      <div id="top-right-footer">
+      <div id="center-right-footer">
         <img src="../assets/img/dc-logo-bg.png" alt="DC Logo Background" />
       </div>
     </div>
@@ -65,8 +62,12 @@
 </template>
 
 <script>
+import AppUpperFooter from "./AppUpperFooter.vue";
 export default {
   name: "AppFooter",
+  components: {
+    AppUpperFooter,
+  },
   // props: {
   //   msg: String
   // }
@@ -108,10 +109,12 @@ export default {
 <style lang="scss" scoped>
 @import "../style/variables.scss";
 footer {
-  height: 50vh;
-  #top-footer {
-    // height: calc(100% - 100px);
-    // overflow-y: auto;
+  // min-width: 1000px;
+  position: relative;
+  // height: 50vh;
+  #central-footer {
+    overflow-y: auto;
+    // z-index: 1;
     width: 100%;
     background: url(../assets/img/footer-bg.jpg) center center no-repeat;
     background-size: cover;
@@ -121,7 +124,7 @@ footer {
     // position: fixed;
     // height: 50vh;
     // bottom: 100px;
-    #top-left-footer {
+    #center-left-footer {
       display: flex;
       margin-top: 40px;
       margin-bottom: 40px;
@@ -130,6 +133,7 @@ footer {
         color: white;
       }
       ul {
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -144,7 +148,7 @@ footer {
         }
       }
     }
-    #top-right-footer {
+    #center-right-footer {
       margin-top: 40px;
       margin-bottom: 40px;
       margin-right: 40px;
@@ -155,6 +159,8 @@ footer {
     width: 100%;
     height: 100px;
     z-index: 999;
+    position: absolute;
+    bottom: 0;
     // position: fixed;
     // bottom: 0;
     // left: 0;

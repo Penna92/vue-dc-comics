@@ -58,8 +58,12 @@ export default {
 <style lang="scss" scoped>
 @import "../style/variables.scss";
 #upper-footer {
+  position: absolute;
+  top: 0;
+  width: 100%;
   height: 150px;
   background-color: $azzurro;
+  z-index: 9999;
   ul {
     height: 100%;
     display: flex;
