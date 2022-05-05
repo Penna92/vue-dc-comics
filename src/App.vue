@@ -29,7 +29,7 @@ export default {
 @import "./style/variables.scss";
 @import "./style/general.scss";
 #app {
-  min-width: 1000px;
+  min-width: 1150px;
   background-color: rgb(28, 28, 28);
 }
 main {

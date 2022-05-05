@@ -92,6 +92,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  padding: 0 10%;
   background-color: white;
   display: flex;
   align-items: center;

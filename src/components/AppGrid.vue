@@ -120,6 +120,7 @@ export default {
   width: 100%;
   background-color: rgb(28, 28, 28);
   text-align: center;
+  //   display: flex;
   position: relative;
   #card-label {
     padding: 10px 20px;
@@ -127,7 +128,7 @@ export default {
     width: fit-content;
     position: absolute;
     top: -100px;
-    left: 5%;
+    left: 10%;
     transform: translate(0, -50%);
     // left: 40px;
     h3 {
@@ -137,7 +138,8 @@ export default {
   }
 
   ul {
-    margin: 100px 0 50px 0;
+    margin: 100px auto 50px auto;
+    width: 80%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -147,7 +149,6 @@ export default {
     li {
       height: 300px;
       width: 15%;
-      padding: 30px auto;
       list-style-type: none;
       overflow-wrap: break-word;
       img {

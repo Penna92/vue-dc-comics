@@ -109,13 +109,14 @@ export default {
 <style lang="scss" scoped>
 @import "../style/variables.scss";
 footer {
+  // width: 80%;
   // min-width: 1000px;
   position: relative;
   // height: 50vh;
   #central-footer {
     overflow-y: auto;
     // z-index: 1;
-    width: 100%;
+    // width: 80%;
     background: url(../assets/img/footer-bg.jpg) center center no-repeat;
     background-size: cover;
     display: flex;
@@ -128,7 +129,7 @@ footer {
       display: flex;
       margin-top: 40px;
       margin-bottom: 40px;
-      margin-left: 40px;
+      margin-left: 10%;
       h2 {
         color: white;
       }
@@ -151,7 +152,7 @@ footer {
     #center-right-footer {
       margin-top: 40px;
       margin-bottom: 40px;
-      margin-right: 40px;
+      margin-right: 10%;
     }
   }
   #bottom-footer {
@@ -168,7 +169,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     #bottom-left-footer {
-      margin-left: 40px;
+      margin-left: 10%;
       button {
         padding: 10px;
         color: white;
@@ -201,7 +202,7 @@ footer {
           }
         }
       }
-      margin-right: 40px;
+      margin-right: 10%;
     }
   }
 }
